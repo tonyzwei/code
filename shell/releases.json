@@ -1,0 +1,50 @@
+{
+    "env_stage": "Demo",
+    "release": [
+        {
+            "project": "mauth",
+            "release_tag": "release.2017.1.0",
+            "dependency": ""
+        },
+        {
+            "project": "eureka",
+            "release_tag": "release.2016.2.0",
+            "dependency": "mauth"
+        },
+        {
+            "project": "dalton",
+            "release_tag": "release.2018.1.0",
+            "dependency": "eureka, mauth"
+        },
+        {
+            "project": "balance",
+            "release_tag": "balance-release-2017.4.1",
+            "dependency": "eureka, mauth, imedidata, casmedidata"
+        },
+        {
+            "project": "plinth",
+            "release_tag": "release.2018.1.0",
+            "dependency": "eureka, mauth, dalton"
+        },
+        {
+            "project": "daltonui",
+            "release_tag": "release.2017.4.1",
+            "dependency": "eureka, mauth"
+        },
+        {
+            "project": "ShadowBroker",
+            "release_tag": "release.2017.1.1",
+            "dependency": ""
+        },
+        {
+            "project": "casmedidata",
+            "release_tag": "",
+            "dependency": "eureka"
+        },
+        {
+            "project": "imedidata",
+            "release_tag": "release.2018.1.0",
+            "dependency": "eureka"
+        }
+    ]
+}
